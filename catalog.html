@@ -3,180 +3,179 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  href="css/style.css">
   </head>
-  <body>
+  <body class="page-body inner-page">
   	<header>
-  		<nav>
-  			<a href="index.html">
-  				<img src="img/logo-glacy.svg" alt="Логотип магазина Глейси">
-  			</a>
-  			<ul>
-  				<li><a>Каталог</a></li>
-    			<li><a href="blank.html">Доставка и оплата</a></li>
-    			<li><a href="blank.html">О компании</a></li>
-  			</ul>
-  			<a href=""><img src="img/search.png" alt="Поиск"></a>
-        <a href=""><img src="img/input.png" alt="Вход"></a>
-        <a href=""><img src="img/Paper-basket.svg" alt="Корзина"></a>
+  		<nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo-glacy.svg" alt="Логотип магазина Глейси">
+        </a>
+        <div class="main-navigation-wrapper">
+        <ul class="site-navigation">
+          <li class="site-navigation-current"><a href="catalog.html"> Каталог</a></li>
+          <li><a href="blank.html">Доставка и оплата</a></li>
+          <li><a href="blank.html">О компании</a></li>
+        </ul>
+        </div>
+        <div class="user-navigation">
+  			 <a href=""><img src="img/search.png" alt="Поиск"></a>
+         <a href=""><img src="img/input.png" alt="Вход"></a>
+         <a href=""><img src="img/Корзина2т.png" alt="Корзина"></a>
+        </div>
   		</nav>
-      <section>
+      <!--<section>
         <h2>2 товара</h2>
          <button type="button">Удалить</button><img src="img/Сливочное с апельсиновым джемом и цитрусовой стружкой.jpg"> Пломбир с апельсиновым джемом<br>
           <button type="button">Удалить</button><img src="img/Сливочно-клубничное с присыпкой из белого шоколада.jpg" alt=""> Клубничный пломбир с присыпкой из белого шоколада
            <button type="submit">Оформить заказ</button>
-      </section>
-  		<div>
-  			с 10 до 20,ежедневно<br>
-  			8 812 450-25-25
+      </section>-->
+  		<div class="timetable">
+  			с 10 до 20,ежедневно
+  			<p> 8 812 450-25-25 </p>
   		</div>
   	</header>
-  	<main>
-  		<ul>
+  	<main class="page-catalog container">
+      <ul class="breadcrumbs">
   			<li>
   				<a href="index.html">Главная</a>
   			</li>
   			<li>
   				<a href="catalog.html">Каталог</a>
   			</li>
-  			<li>
+  			<li class="breadcrumbs-current">
   				Сливочное
   			</li>
   		</ul>
-  		<section>
+  		<!--<section>
   			<h2>Фильтр товаров</h2>
-  			<!-- здесь будет форма фильтров товаров-->
-  		</section>
-  		<section>
-  			<h2></h2>
+  			
+  		</section>-->
+  		<section class="catalog">
+  			<h1 class="page-title">Сливочное мороженое</h1>
   			<ul>
   				<li>
   					<a href="product.html">
   						<h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-  						<p><img src="img/Сливочное с апельсиновым джемом и цитрусовой стружкой.jpg" alt="Сливочное с апельсиновым джемом и цитросувой стружкой"></p>
+  						<p><img class="catalog-img" src="img/Сливочное с апельсиновым джемом и цитрусовой стружкой.jpg" alt="Сливочное с апельсиновым джемом и цитросувой стружкой"></p>
   					</a>
-  					<p>310 P</p>
+  					<p class="price">310 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочно-кофейное с кусочками шоколада</h3>
   						<p><img src="img/Сливочно-кофейное с кусочками шоколада.jpg" alt="Сливочно-кофейное с кусочками шоколада"></p>
   					</a>
-  					<p>380 P</p>
+  					<p class="price">380 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
   						<p><img src="img/Сливочно-клубничное с присыпкой из белого шоколада.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"></p>
   					</a>
-  					<p>355 P</p>
+  					<p class="price">355 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочное крем-брюле с карамельной подливкой</h3>
   						<p><img src="img/Сливочное крем-брюле с карамельной подливкой.jpg" alt="Сливочное крем-брюле с карамельной подливкой"></p>
   					</a>
-  					<p>415 P</p>
+  					<p class="price"> 415 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочное с брусничным джемом</h3>
   						<p><img src="img/Сливочное с брусничным джемом.jpg" alt="Сливочное с брусничным джемом"></p>
   					</a>
-  					<p>325 P</p>
+  					<p class="price">325 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочно-черничное с цельными ягодами черники</h3>
   						<p><img src="img/Сливочно-черничное с цельными ягодами черники.jpg" alt="Сливочно-черничное с цельными ягодами черники"></p>
   					</a>
-  					<p>410 P</p>
+  					<p class="price">410 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочно-лимонное с карамельной присыпкой</h3>
   						<p><img src="img/Сливочно-лимонное с карамельной присыпкой.jpg" alt="Сливочно-лимонное с карамельной присыпкой"></p>
   					</a>
-  					<p>315 P</p>
+  					<p class="price">315 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочное с шоколадной стружкой</h3>
   						<p><img src="img/Сливочное с шоколадной стружкой.jpg" alt="Сливочное с шоколадной стружкой"></p>
   					</a>
-  					<p>320 P</p>
+  					<p class="price">320 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочно-ванильное с кусочками шоколада</h3>
   						<p><img src="img/Сливочно-ванильное с кусочками шоколада.jpg" alt="Сливочно-ванильное с кусочками шоколада"></p>
   					</a>
-  					<p>440 P</p>
+  					<p class="price">440 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочное с ментоловым сиропом</h3>
   						<p><img src="img/Сливочное с ментоловым сиропом.jpg" alt="Сливочное с ментоловым сиропом"></p>
   					</a>
-  					<p>435 P</p>
+  					<p class="price">435 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочное с кусочками чёрного шоколада</h3>
   						<p><img src="img/Сливочное с кусочками черного шоколада.jpg" alt="Сливочное с кусочками чёрного шоколада"></p>
   					</a>
-  					<p>355 P</p>
+  					<p class="price">355 P</p>
   				</li>
   				<li>
   					<a href="product.html">
   						<h3>Сливочное с мятным сиропом</h3>
   						<p><img src="img/Сливочное с мятным сиропом.jpg" alt=""></p>
   					</a>
-  					<p>420 P</p>
+  					<p class="price">420 P</p>
   				</li>
   			</ul>
-  			<ul>
-      <li>
-        <a>1</a>
-      </li>
-      <li>
-        <a href="#">2</a>
-      </li>
-      <li>
-        <a href="#">3</a>
-      </li>
-      <li>
-        <a href="#">4</a>
-      </li>
-    </ul>
+  			<ul class="pages">
+          <li>
+            <a class="current-page"><img src="img/подложка.png"> 1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+           <a href="#">3</a>
+          </li>
+          <li>
+           <a href="#">4</a>
+          </li>
+        </ul>
   		</section>
   	</main>
-  	<footer>
-     	<section>
-     		<h2>Связь с нами:</h2>
-     		<a href="http://facebook.com"><img src="img/Фэйсбук.svg" alt="Фэйсбук"> </a>
-        <a href="http://vk.com"><img src="img/Вконтакте.svg" alt="Вконтакте"></a>
-        <a href="http://www.instagram.com"><img src="img/Инстаграм.svg" alt="Инстаграм"></a>
-        <a href="http://twitter.com"><img src="img/Твитер.svg" alt="Твитер"></a>
-     	</section>
-     	<section>
-     		<h2>Полезные ссылки</h2>
-     		<ul>
-          <img src="img/heart.svg">
-     			<li><a href="#">Для поставщиков</a></li>
-     			<li><a href="#">О производстве</a></li>
-     			<li><a href="#">Наши документы</a></li>
-     			<li><a href="#">Экологичесие стандарты</a></li>
-     	   </ul>
-
-     	</section >
-     	<div>
-     		<img src="img/logo-academy.svg" alt="Логотип HTML academy">
-     		Сделано в
-     		<a href="https://htmlacademy.ru">HTML Academy</a>
-     		© 2020
-     	</div>
-     </footer>
-     <section>
+  	<footer class="main-footer">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Связь с нами:</h2>
+        <a href="http://facebook.com"><img src="img/facebook.svg" alt="Фэйсбук"> </a>
+        <a href="http://vk.com"><img src="img/vk.svg" alt="Вконтакте"></a>
+        <a href="http://www.instagram.com"><img src="img/inst.svg" alt="Инстаграм"></a>
+        <a href="http://twitter.com"><img src="img/twitter.svg" alt="Твитер"></a>
+      </section>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Полезные ссылки</h2>
+        <ul>
+          <li><img src="img/heart.svg"><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологичесие стандарты</a></li>
+         </ul>
+      </section>
+    </footer>
+     <!--<section>
        <form action="https://echo.htmlacademy.ru" method="post">
          <h2>Мы обязательно вам ответим!</h2>
          <label> <input type="text" name="username" placeholder="Как вас зовут?">Как вас зовут?</label>
@@ -184,12 +183,18 @@
          <label> <input type="text" name="comment" placeholder="Напишите что-нибудь...">Комментарий</label>
          <button type="submit">Отправить</button>
        </form>
+       <div>
+        <img src="img/logo-academy.svg" alt="Логотип HTML academy">
+        Сделано в
+        <a href="https://htmlacademy.ru">HTML Academy</a>
+        © 2020
+      </div>
      </section>
      <section>
        <input type="text" name="search" placeholder="Что ищем?">
      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
 
   </body>
 </html>
