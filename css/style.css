@@ -10,7 +10,6 @@
   --current-navigation: #D07058;
 }
 
-
 /* Global */
 
 body {
@@ -227,6 +226,7 @@ body {
   color: var(--basic-grey);
   align-items: center;
 }
+
 
 /* Main footer */
 
