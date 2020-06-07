@@ -28,6 +28,35 @@ body {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Main header */
+
+.main-header {
+  margin-bottom: 521px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+
+.main-header-logo{
+  width: 154px;
+  height: 64px;
+}
+
 /* Main navigation */
 
 .main-navigation {
@@ -39,6 +68,8 @@ body {
 }
 
 .main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 32px;
   background-color: var(--basic-back);
   list-style: none;
 }
