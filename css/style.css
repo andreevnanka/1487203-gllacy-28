@@ -10,6 +10,7 @@
   --current-navigation: #D07058;
 }
 
+
 /* Global */
 
 body {
@@ -57,6 +58,7 @@ body {
   height: 64px;
 }
 
+
 /* Container */
 
 .container {
@@ -67,6 +69,7 @@ body {
   margin-left: auto;
   padding: 0 27px;
 }
+
 
 /* Main navigation */
 
