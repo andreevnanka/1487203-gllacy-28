@@ -13,7 +13,7 @@
 /* Global */
 
 body {
-  min-width: 1200px;
+  min-width: 1146px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -41,12 +41,30 @@ body {
   align-content: start;
 }
 
+/* Container */
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-navigation-wrapper .conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation-wrapper .conteiner .user-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Main header */
 
 .main-header {
   margin-bottom: 521px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -60,6 +78,9 @@ body {
 /* Main navigation */
 
 .main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
@@ -75,6 +96,9 @@ body {
 }
 
 .site-navigation {
+  width: 700px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   align-items: center;
 
@@ -89,6 +113,7 @@ body {
   }
   
   .timetable {
+    width: 150px;
    color: var(--basic-white);
    font-weight: bold;
    font-size: 14px;
@@ -96,6 +121,7 @@ body {
   }
 
   .timetable p{
+  width: 167px;
   font-weight: bold;
   font-size: 22px;
   line-height: 24px;
@@ -107,7 +133,11 @@ body {
 .user-navigation a {
   color: var(--basic-white);
 }
-
+ .user-navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 245px;
+ }
 /*.site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
@@ -116,6 +146,13 @@ body {
 }*/
 
 /* Actions */
+
+.actions {
+  width: 1146px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+}
 
 .action-berry {
   color: var(--basic-white);
@@ -169,6 +206,9 @@ body {
   background-image: url("../img/Pattern-wafer.jpg");
   background-position: center, 0 0;
 }
+.features {
+  display: flex;
+}
 
 .features p {
   font-weight: 500;
@@ -215,7 +255,7 @@ body {
 /* Mailing */
 
 .mailing {
-	color: var(--basic-grey-light)
+  color: var(--basic-grey-light)
   align-items: center;
   background-color: var(--basic-substrate);
   border-radius: 16px;
@@ -224,7 +264,7 @@ body {
 }
 
 .mailing-item {
-	color: var(--basic-light)
+  color: var(--basic-light)
   }
 
   .mailing-item input {
@@ -269,10 +309,27 @@ body {
 
 /* Catalog */
 
+.index-catalog {
+  display: flex;
+  width: 1146px;
+}
+
 .catalog {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  margin-bottom: 83px;
   color: var(--basic-white);
   list-style: none;
 }
+ .catalog-item {
+  width: 267px;
+  min-height: 267px;
+  margin-left: 26px;
+  margin-bottom: 43px;
+ }
 
 .price {
   color: var(--basic-white);
@@ -284,7 +341,7 @@ body {
 .catalog a {
   color: var(--basic-white);
   font-weight: 500;
-  border-radius 100px;
+  border-radius: 100px;
 }
 
 .page-title {
