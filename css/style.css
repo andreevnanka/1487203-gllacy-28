@@ -10,11 +10,10 @@
   --current-navigation: #D07058;
 }
 
-
 /* Global */
 
 body {
-  min-width: 1200px;
+  min-width: 1146px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -42,38 +41,46 @@ body {
   align-content: start;
 }
 
+/* Container */
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-navigation-wrapper .conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation-wrapper .conteiner .user-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Main header */
 
 .main-header {
   margin-bottom: 521px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 /* Logo */
 
-.main-header-logo {
+.main-header-logo{
   width: 154px;
   height: 64px;
 }
 
-
-/* Container */
-
-.container {
-  width: 1200px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 27px;
-}
-
-
 /* Main navigation */
 
 .main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
@@ -89,6 +96,9 @@ body {
 }
 
 .site-navigation {
+  width: 700px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   align-items: center;
 
@@ -103,6 +113,7 @@ body {
   }
   
   .timetable {
+    width: 150px;
    color: var(--basic-white);
    font-weight: bold;
    font-size: 14px;
@@ -110,6 +121,7 @@ body {
   }
 
   .timetable p{
+  width: 167px;
   font-weight: bold;
   font-size: 22px;
   line-height: 24px;
@@ -121,7 +133,12 @@ body {
 .user-navigation a {
   color: var(--basic-white);
 }
-
+ .user-navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 245px;
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+ }
 /*.site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
@@ -130,6 +147,13 @@ body {
 }*/
 
 /* Actions */
+
+.actions {
+  width: 1146px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+}
 
 .action-berry {
   color: var(--basic-white);
@@ -183,6 +207,9 @@ body {
   background-image: url("../img/Pattern-wafer.jpg");
   background-position: center, 0 0;
 }
+.features {
+  display: flex;
+}
 
 .features p {
   font-weight: 500;
@@ -229,7 +256,7 @@ body {
 /* Mailing */
 
 .mailing {
-	color: var(--basic-grey-light)
+  color: var(--basic-grey-light)
   align-items: center;
   background-color: var(--basic-substrate);
   border-radius: 16px;
@@ -238,7 +265,7 @@ body {
 }
 
 .mailing-item {
-	color: var(--basic-light)
+  color: var(--basic-light)
   }
 
   .mailing-item input {
@@ -283,10 +310,26 @@ body {
 
 /* Catalog */
 
+.index-catalog {
+  display: flex;
+}
+
 .catalog {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  margin-bottom: 83px;
   color: var(--basic-white);
   list-style: none;
 }
+ .catalog-item {
+  width: 267 px;
+  min-height: 267px;
+  margin-left: 26 px;
+  margin-bottom: 43 px;
+ }
 
 .price {
   color: var(--basic-white);
