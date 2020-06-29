@@ -1,0 +1,1 @@
+var loginLink = document.querySelector(".modal-enter");
