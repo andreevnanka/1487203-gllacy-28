@@ -39,21 +39,22 @@ input[type="radio"].visually-hidden {
 }
 
 body {
-/*  display: flex;
-  justify-content: center;*/
   min-width: 1146px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: var(--basic-white: #ffffff);
-  background-color: var(--basic-back);
+  color: var(--basic-white);
  }
 
  img {
   max-width: 100%;
   height: auto;
+}
+
+.inner-page {
+  background-color: var(--total-background-color1);
 }
 
 /* Grid */
@@ -75,7 +76,7 @@ body {
 .container {
   position: relative;
   width: 1146px;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px 27px;
 }
 
@@ -85,18 +86,18 @@ body {
 .main-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  width: 1200px;
 }
 
 .main-header-logo{
   margin-top: 9px;
-  margin-right: 24px;
+  margin-right: 25px;
   width: 154px;
   height: 64px;
 }
 
 .inner-page .main-header-logo{
-  margin-left: 27px;
+  margin-left: 14px;
 }
 
 /* Main navigation */
@@ -143,12 +144,17 @@ body {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
+  width: 600px;
   height: 31px;
   margin: 0;
   padding: 0;
   list-style: none;
   align-items: center;
+}
+
+.site-navigation li {
+  padding-top: 9px;
+  padding-right: 0px;
 }
 
 .site-navigation a {
@@ -158,9 +164,10 @@ body {
 .site-navigation-current a{
   background-color: var(--current-navigation);
   border-radius: 26px;
-  width: 89px;
-  height: 16px;
+  width: 63px;
+  height: 12px;
   text-align: center;
+  margin-left: 10px;
 }
 
 .timetable {
@@ -194,20 +201,20 @@ body {
   padding-top: 9px;
   padding-bottom: 11px;
   padding-left: 13px;
-  margin-top: 23px;
+  margin-top: 5px;
 }
  .user-navigation {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  max-width: 245px;
+  margin-right: 27px;
  }
 
 /* Price */
 
 .price {
   position: relative;
-  top: -170px;
+  top: -130px;
   left: -75px;
   color: var(--basic-white);
   font-weight: bold;
@@ -218,7 +225,7 @@ body {
 
 .price-mass {
   position: relative;
-  top: -250px;
+  top: -210px;
   left: 8px;
   color: var(--basic-white);
   font-weight: bold;
@@ -251,7 +258,7 @@ body {
   justify-content: space-between;
   width: 1200px;
   align-items: center;
-  padding: 15px;
+  padding-top: 11px;
 }
 
 .main-footer {
@@ -266,10 +273,8 @@ body {
 .footer-contacts {
   display: flex;
   justify-content: space-between;
-  width: 230px;
+  width: 220px;
   margin-right: 200px;
-  margin-bottom: 10px;
-  margin-left: 0px;
 }
 
 .footer-contacts img{
@@ -319,25 +324,30 @@ body {
 
 .site-wrapper {
   min-width: 940px;
-  background-color: #849d8f;
-  background-image: url("img/slider-item-1.png");
+  background-image: url("img/site-wrapper-1.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .site-wrapper-1 {
   background-color: var(--total-background-color1);
-  background-image: url("img/site-wrapper-1.png");
+  background-image: url("img/Фон.png");
 }
 
 .site-wrapper-2 {
   background-color: var(--total-background-color2);
-  background-image: url("img/slider-item-2.png");
+  background-image: url("img/Фон2.png");
 }
 
 .site-wrapper-3 {
   background-color: var(--total-background-color3);
-  background-image: url("img/slider-item-3.png");
+  background-image: url("img/Фон3.png");
+}
+
+.slider-item img {
+  position: absolute;
+  top: -73px;
+  left: 0px;
 }
 
 /* Sliders */
@@ -539,6 +549,11 @@ body {
 
 /* Catalog */
 
+.catalog-header-logo {
+  margin-left: 27px;
+  margin-top: 9px;
+}
+
 .index-catalog {
   margin-left: -37px;
   display: inline-flex;
@@ -586,9 +601,6 @@ body {
 }
 
 .features-list {
-  position: absolute;
-  left: -12px;
-  top: 86px;
   display:inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -793,11 +805,12 @@ body {
   align-items: baseline;
   justify-content: space-between;
   list-style: none;
-  width: 100px;
+  width: 226px;
+  height: 2px;
   font-size: 14px;
   line-height: 16px;
-  padding: 0px;
-  margin-top: 30px;
+  padding-top: 10px;
+  padding-left: 0px;
 }
 
 .breadcrumbs a {
@@ -809,14 +822,20 @@ body {
 .breadcrumbs li{
   position: relative;
   margin-right: 2px;
+  margin-bottom: 0px;
 }
 
-s
 .breadcrumbs-current {
   list-style: none;
   color: var(--basic-white);
   font-size: 14px;
   line-height: 16px;
+}
+
+.page-title {
+  color: var(--basic-white);
+  font-size: 35px;
+  line-height: 41px;
 }
 
 /*Filters*/
@@ -863,10 +882,13 @@ s
   position: absolute;
   top: 2px;
   left: -30px;
-  width: 10px;
+/*  width: 10px;
   height: 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
+  border-radius: 50%;*/
+  background-image: url(checkbox-on.jpg);
+  background-size: 24px 20px;
+  background-position: 
 }
 
 .filter-input-radio + label::before {
@@ -897,7 +919,14 @@ s
   width: 186px;
   position: absolute;
   left: -16px;
-  top: 44px;
+  top: 72px;
+}
+
+.sort-by legend{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 17px;
 }
 
 .sort {
@@ -909,7 +938,8 @@ s
   height: 36px;
   border-radius: 20px;
   padding-left: 16px;
-  align-items: center;  
+  align-items: center; 
+  margin: 0px;   
 }
 
 .sort:hover {
@@ -925,7 +955,7 @@ s
 .price-range {
   position: absolute;
   left: 211px;
-  top: -18px;
+  top: 3px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -941,6 +971,7 @@ s
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  padding-left: 17px;
 }
 
 .price-controls {
@@ -959,7 +990,8 @@ s
   border: none;
   background: none;
   color: var(--basic-white);
-  width: 56px;
+  width: 54px;
+  padding-left: 17px;
 }
 
 .range-controls {
@@ -1011,9 +1043,16 @@ s
 .fat-percent {
   position: absolute;
   left: 430px;
-  top: 30px;
+  top: 71px;
   border: none;
   width: 300px;
+}
+
+.fat-percent legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 17px;
 }
 
 .fat {
@@ -1031,6 +1070,7 @@ s
   line-height: 18px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+  margin: 0px;
 }
 
 /* Flavor */
@@ -1038,9 +1078,17 @@ s
 .flavor-type {
   border: none;
   width: 711px;
+  height: 60px;
   position: absolute;
   left: -13px;
-  top: 102px;
+  top: 145px;
+}
+
+.flavor-type legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 17px;
 }
 
 .flavor {
@@ -1054,12 +1102,13 @@ s
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+  margin: 0px;
 }
 
 .filter-button {
   position: absolute;
   left: 725px;
-  top: 146px;
+  top: 166px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1074,7 +1123,10 @@ s
 
 .filter-button:hover {
   color: var(--basic-grey);
-  background-color: var(--basic-white);
+  background-image: url(...img/checkbox-on.png);
+  background-position: top left;
+  background-size: 24px 20px;
+  height: 20px;
 }
 
 /* Catalog */
@@ -1089,13 +1141,13 @@ s
   list-style: none;
   width: 1200px;
   padding-left: 0px;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-top: 120px;
 }
 
 .catalog-item {
   width: 267px;
-  height: 357px;
+  height: 360px;
   margin-right: 26px;
   text-align: center;
 }
@@ -1110,6 +1162,7 @@ s
 
 .catalog-item p{
   width: 267px;
+  margin-top: 4px;
 }
 
 /*.catalog-item:hover {
@@ -1132,14 +1185,8 @@ s
 
 .pagination-conteiner{
   position: absolute;
-  bottom: -30px;
-  left: -1px;
-}
-
-.page-title {
-  color: var(--basic-white);
-  font-size: 35px;
-  line-height: 41px;
+  bottom: -32px;
+  left: -8px;
 }
 
 .pagination-list {
@@ -1158,6 +1205,7 @@ s
 .pagination-item {
   width: 26px;
   height: 26px;
+  text-align: center;
 }
 
 .pagination-item:hover {
@@ -1167,21 +1215,18 @@ s
   border-radius: 50%;
 }
 
-.pagination-item a:hover {
-    margin-top: 5px;
-}
-
 .pagination-item a {
   display: block;
   text-decoration: none;
   color: var(--basic-white);
   height: 26px;
+      margin-top: 5px;
 }
 
 .pagination-item-current {
   position: relative;
-  left: -10px;
-  top: -5px;
+  left: 0px;
+  top: 0px;
   text-align: center;
   width: 26px;
   height: 26px;
@@ -1422,10 +1467,10 @@ s
 
 .modal-sort {
   position: absolute;
-  left: 47px;
-  top: 273px;
+  left: 26px;
+  top: 245px;
   width: 196px;
-  height: 99px;
+  height: 91px;
   background-color: var(--basic-white);
   color: var(--basic-grey);
 }
@@ -1446,7 +1491,7 @@ s
 
 .sort-current {
   width: 176px;
-  height: 20px;
+  height: 15px;
   background-color: #1E90FF;
   padding-top: 8px;
   margin: 0px;
