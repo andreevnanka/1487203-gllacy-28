@@ -608,6 +608,24 @@ body {
   color: var(--basic-white);
 }
 
+.top-catalog {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.price-index {
+  position: absolute;
+  top: 164px;
+  left: -4px;
+}
+
+.price-mass-index {
+  position: absolute;
+  top: 218px;
+  left: 120px;
+}
+
 /* Features */
 
 .features {
@@ -824,6 +842,14 @@ body {
   margin-right: 25px;
   margin-left: 25px;
   border-style: none;
+}
+
+.feedback a {
+  color: var(--basic-grey);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 /* CATALOG */
@@ -1527,10 +1553,13 @@ body {
 .feedback-button {
   border: none;
   position: absolute;
-  left: 312px;
-  top: 370px;
+  left: 0px;
+  top: 235px;
   width: 140px;
   height: 44px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .feedback-close {
