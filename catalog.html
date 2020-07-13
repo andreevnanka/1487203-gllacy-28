@@ -153,26 +153,26 @@
               <section class="modal-sort ">
                 <ul class="sort-list">
                   <li class="sort-item sort-current">
-                    <input class="visually-hidden" type="radio" name="catalog"> 
-                    <label>
+                    <input class="visually-hidden" type="radio" name="catalog" id="popularity"> 
+                    <label for="popularity">
                       по популярности
                     </label>
                   </li>
                   <li class="sort-item">
-                    <input class="visually-hidden" type="radio" name="catalog">
-                    <label>
+                    <input class="visually-hidden" type="radio" name="catalog" id="inexpensive">
+                    <label for="inexpensive">
                       сначала недорогие
                     </label>
                   </li>
                   <li class="sort-item">
-                    <input class="visually-hidden" type="radio" name="catalog"> 
-                    <label>
+                    <input class="visually-hidden" type="radio" name="catalog" id="expensive"> 
+                    <label for="expensive">
                       сначала дорогие
                     </label>
                   </li>
                   <li class="sort-item">
-                    <input class="visually-hidden" type="radio" name="catalog"> 
-                    <label>
+                    <input class="visually-hidden" type="radio" name="catalog" id="fat"> 
+                    <label for="fat">
                       по жирности
                     </label>
                   </li>
@@ -186,11 +186,11 @@
             </legend>
             <div class="range-filter">
               <div class="price-controls">
-                <label class="min-price">
-                  <input type="text" name="min-price" value="100₽">
+                <label class="min-price" for="min-price">
+                  <input type="text" name="min-price" value="100₽" id="min-price">
                 </label>
-                <label class="max-price">
-                  -<input type="text" name="max-price" value="500₽">
+                <label class="max-price" for="max-price">
+                  -<input type="text" name="max-price" value="500₽" id="max-price">
                 </label>
               </div>
               <div class="range-controls">

@@ -75,7 +75,9 @@
             </a>
             <section class="search">
               <img src="img/search-icon-hover.svg" width="32" height="32">
-              <input type="text" name="search" placeholder="Крем-брюле">    
+              <label for="search">
+                <input type="text" name="search" placeholder="Крем-брюле" id="search">
+              </label>    
             </section>
           </li>
           <li>
@@ -91,13 +93,13 @@
                   <label for="login-mail">
                     Логин
                   </label>
-                  <input class="login-mail" type="email" name="login" placeholder="email@example.com">
+                  <input class="login-mail" type="email" name="login" placeholder="email@example.com" id="login-mail">
                 </p>
                 <p>
                   <label  for="login-pass">
                     Пароль
                   </label>
-                  <input class="login-pass" type="password" name="password" placeholder="......">
+                  <input class="login-pass" type="password" name="password" placeholder="......" id="login-pass">
                 </p>
                 <button class="button login-button" type="submit">
                   Войти
@@ -303,7 +305,9 @@
             </p>
             <form action="https://echo.htmlacademy.ru" method="post">
              <p class="mailing-item">
-             <input type="email" name="" placeholder="email@example.com">
+              <label for="email">
+               <input type="email" name="" placeholder="email@example.com" id="email">
+              </label>
              <button class="button" type="submit">Отправить</button></p>
             </form>  
            </div>
@@ -337,14 +341,14 @@
               <h2>
                 Мы обязательно вам ответим!
               </h2>
-              <label>
-                <input class="feedback-username" type="text" name="username" placeholder="Имя Фамилия">
+              <label for="username">
+                <input class="feedback-username" type="text" name="username" placeholder="Имя Фамилия" id="username">
               </label>
-              <label>
-                <input class="feedback-usermail" type="email" name="usermail" placeholder="email@example.com">
+              <label for="usermail">
+                <input class="feedback-usermail" type="email" name="usermail" placeholder="email@example.com" id="usermail">
               </label>
-              <label >
-                <input class="feedback-comment" type="text" name="comment" placeholder="В свободной форме">
+              <label for="comment">
+                <input class="feedback-comment" type="text" name="comment" placeholder="В свободной форме" id="comment">
               </label>
               <button class="feedback-button button" type="submit">
                 Отправить
@@ -409,7 +413,7 @@
         </section>
       </div>
     </footer>
-    <script type="text/javascript" src="js/feedback.js">
+    <script type="text/javascript" src="js/feedback-min.js">
       var feedbackLink = document.querySelector(".feedback-button");
       var feedbackPopup = document.querySelector(".modal-feedback-reg");
       var feedbackClose = FeedbackPopup.querySelector(".feedback-close");
