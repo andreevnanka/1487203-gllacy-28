@@ -31,7 +31,7 @@
                     </a>
                   </li>
                   <li class="sub-menu-item sub-menu-line">
-                    <img src="img/line-menu.svg" width="" height="">
+                    <img src="img/line-menu.svg" width="128" height="2" alt="Декоративный элемент">
                   </li> 
                   <li class="sub-menu-item">
                     <a>
@@ -74,7 +74,7 @@
               <img src="img/search.svg" width="32" height="32" alt="Поиск">
             </a>
             <section class="search">
-              <img src="img/search-icon-hover.svg" width="32" height="32">
+              <img src="img/search-icon-hover.svg" width="32" height="32" alt="Введите запрос">
               <label for="search">
                 <input type="text" name="search" placeholder="Крем-брюле" id="search">
               </label>    
@@ -87,7 +87,7 @@
               <h2 class="visually-hidden">
                 Войдите на сайт
               </h2>
-              <img src="img/login-icon-hover.svg">
+              <img src="img/login-icon-hover.svg" width="92" height="32" alt="Выполните вход в окне ниже">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
                   <label for="login-mail">
@@ -130,7 +130,9 @@
 
     <main class="container">
       <div class="timetable">
-        с 10 до 20, ежедневно
+        <p>
+          с 10 до 20, ежедневно
+        </p>
         <a href="tel:88124502525">
          8 812 450-25-25 
         </a>
@@ -202,11 +204,9 @@
             <ul class="index-catalog">
                 <li class="index-catalog-item">
                     <a href="product.html">
-                      <img src="img/top.svg" class="top-catalog" width="61" height="61">
-                      <img src="img/ice-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">                                      
-                      <p>
-                        Сливочное с апельсиновым джемом и цитросувой стружкой
-                      </p>
+                      <img src="img/top.svg" class="top-catalog" width="61" height="61" alt="хит">
+                      <img src="img/ice-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">  
+                      Сливочное с апельсиновым джемом и цитросувой стружкой
                     </a>
                     <p class="price price-index">
                       310 ₽
@@ -217,9 +217,9 @@
                 </li>
                 <li class="index-catalog-item">
                     <a href="product.html">
-                      <img src="img/top.svg" class="top-catalog" width="61" height="61">
+                      <img src="img/top.svg" class="top-catalog" width="61" height="61" alt="хит">
                       <img src="img/ice-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                      <p>Сливочно-кофейное с кусочками шоколада<p>
+                      Сливочно-кофейное с кусочками шоколада
                     </a>
                     <p class="price price-index">
                       380 ₽
@@ -230,11 +230,9 @@
                 </li>
                 <li class="index-catalog-item">
                     <a href="product.html">
-                      <img src="img/top.svg" class="top-catalog" width="61" height="61">               
+                      <img src="img/top.svg" class="top-catalog" width="61" height="61" alt="хит">            
                       <img src="img/ice-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                      <p>
-                        Сливочно-клубничное с присыпкой из белого шоколада
-                      </p>
+                      Сливочно-клубничное с присыпкой из белого шоколада
                     </a>
                     <p class="price price-index">
                       355 ₽
@@ -245,11 +243,9 @@
                 </li>
                 <li class="index-catalog-item">
                     <a href="product.html">  
-                      <img src="img/top.svg" class="top-catalog" width="61" height="61">                      
+                      <img src="img/top.svg" class="top-catalog" width="61" height="61" alt="хит">            
                       <img src="img/ice-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                      <p>
-                        Сливочное крем-брюле с карамельной подливкой
-                      </p>
+                      Сливочное крем-брюле с карамельной подливкой
                     </a>
                     <p class="price price-index">
                       415 ₽
@@ -353,8 +349,8 @@
               <button class="feedback-button button" type="submit">
                 Отправить
               </button>
-              <button class="feedback-close" type="button" alt="удалить">
-                <img src="img/X-big.png" width="18" height="17">
+              <button class="feedback-close" type="button">
+                <img src="img/x-big.png" width="18" height="17" alt="удалить">
               </button>
             </form>
           </section>
@@ -413,53 +409,7 @@
         </section>
       </div>
     </footer>
-    <script type="text/javascript" src="js/feedback-min.js">
-      var feedbackLink = document.querySelector(".feedback-button");
-      var feedbackPopup = document.querySelector(".modal-feedback-reg");
-      var feedbackClose = FeedbackPopup.querySelector(".feedback-close");
-      var feedbackLogin = FeedbackPopup.querySelector(".feedback-username");
-      var feedbackMail = FeedbackPopup.querySelector(".feedback-usermail");
-      var feedbackForm = FeedbackPopup.querySelector(".feedback-form");
-      var feedbackComment = FeedbackPopup.querySelector(".feedback-comment");
-
-      feedbackLink.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        feedbackPopup.classList.add("modal-show");
-        if (storage) {
-          feedbackLogin.value = storage;
-          feedbackMail.focus();
-        } else {
-          feedbackLogin.focus();
-        }
-        if (storage) {
-          feedbackMail.value = storage;
-          feedbackComment.focus();
-        } else {
-          feedbackLogin.focus();
-          feedbackMail.focus();
-        }
-      });
-      feedbackClose.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        feedbackPopup.classList.remove("modal-show");
-        feedbackPopup.classList.remove("modal-error");
-      });
-      feedbackForm.addEventListener("submit", function (evt) {
-        if (!feedbackLogin.value || !feedbackMail.value || !feedbackComment.value) {
-          evt.preventDefault();
-          feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
-          feedbackPopup.classList.add("modal-error");
-        }
-      });
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (feedbackPopup.classList.contains("modal-show")) {
-            evt.preventDefault();
-            feedbackPopup.classList.remove("modal-show");
-            feedbackPopup.classList.remove("modal-error");
-          }
-        }
-      });
+    <script type="text/javascript" src="js/feedback.js">
     </script>
   </body>
 </html>
